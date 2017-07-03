@@ -80,10 +80,4 @@ class test_get_latest_build(object):
     def test_delete_old_build(self):
         os.system('./delete_old_build.sh')
 
-if __name__ == "__main__":
-    latest= test_get_latest_build()
-    latest.test_delete_old_build()
-    latest.test_download_latest_build()
-    latest.test_tar_latest_build()
-    latest.test_backup_build()
-    latest.test_add_gdb()
+
